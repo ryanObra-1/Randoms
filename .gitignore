@@ -1,0 +1,15 @@
+# Ignore temporary files
+*.log
+*.tmp
+
+# Ignore specific folders
+node_modules/
+dist/
+build/
+
+# Ignore specific files
+config.json
+.env
+
+# Ignore all in a subfolder
+temp/*
