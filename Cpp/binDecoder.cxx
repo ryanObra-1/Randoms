@@ -3,6 +3,7 @@
 using namespace std;
 
 
+long long int counter = 0;
 int continuation(char a);
 
 char reLatch;
@@ -20,13 +21,15 @@ string result;
 
 
 //input area
-    cout << "\n Enter a corresponding inputs to activate line: " << endl;
-    cout << " 0/0 - out One, \n 1/0 - out Two, \n 0/1 - out Three, \n 1/1 - out Four \n" << endl;
+    do { 
+        cout << "\n Enter a corresponding inputs to activate line: " << endl;
+        cout << " 0/0 - out One, \n 1/0 - out Two, \n 0/1 - out Three, \n 1/1 - out Four \n" << endl;
     
-    cout << "Enter first value (1 || 0): " ;
-    cin >>  firstInputVal;
-    cout << "Enter second value (1 || 0): " ;
-    cin >>  secondInputVal;
+        cout << "Enter first value (1 || 0): " ;
+        cin >>  firstInputVal;
+        cout << "Enter second value (1 || 0): " ;
+        cin >>  secondInputVal;
+    } while((firstInputVal != 0 && firstInputVal != 1) || (secondInputVal != 0 && secondInputVal != 1));
 
 /*     
 //input validateon
@@ -63,28 +66,32 @@ a!b = 1&&!1 = t
     }
 
 //result output
-    cout << " " << "Opened the gate at NAND " << result << endl;
+    cout << " " << "Opened at " << result << endl;
     cout << " " << outOne << " " << outTwo << " " << outThree << " " << outFour << endl;
 
 //relaunch?
-    reLatchFunc();
+    do {
+        reLatchFunc();
  
-    if(tolower(reLatch) == 'y' || tolower(reLatch)
-    == 'n') {
-        continuation(reLatch);
-        cout << "I'm called" << endl;
-    } else {
-        cout << "\nEnter a valid value." << endl;
-    }
+        if(tolower(reLatch) == 'y') {
+            continuation(reLatch);
+            cout << "relaunced" << endl;
+        } else if(tolower(reLatch) == 'n'){
+            cout << "exited" << endl;
+            return 0;
+        } else {
+            cout << "\nEnter a valid value." << endl;
+        }
+    } while (tolower(reLatch) != 'y ' || tolower (reLatch) != 'n');
+    
 
 } // end of main()-----
 
 
 int continuation(char a) {
     if(tolower(a) == 'y') {
-         cout << "hello" << endl;
+         counter += 1;
+         cout << counter << endl;
          main(); 
-    } else if (tolower(a) == 'n') {
-        return 0;
     }
 }
