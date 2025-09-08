@@ -1,1 +1,1 @@
-Random programs from subtle ideas
+A hub for small projects from my point of interest 
