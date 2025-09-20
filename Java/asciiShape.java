@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class polygons {
+public class asciiShape {
 	public static void main(String[] args) {
 		
 		int size = 10 - 1; //number starts at 0
