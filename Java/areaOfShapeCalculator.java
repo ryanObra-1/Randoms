@@ -38,7 +38,7 @@ public class areaOfShapeCalculator { // class start
 			} else if(choice == 3) { // for circle
 			    System.out.println("You chose Circle");                System.out.print("input radius: ");
 			    r = input.nextInt();
-			    double pow = (double) Math.pow(r, 2);
+			    double pow =  Math.pow(r, 2);
 			    double area = (double) PI*pow;
 			    System.out.print("the area of square is " + area);
 			} else if(choice == 4) { // for triangle

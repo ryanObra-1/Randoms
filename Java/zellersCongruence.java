@@ -27,7 +27,7 @@ public class zellersCongruence {
                 m += 12f;
             }
 
-            System.out.println(m);
+            //System.out.println(m);
 
             System.out.print("Enter day (1-31): ");
             q = sc.nextInt();
@@ -48,7 +48,7 @@ public class zellersCongruence {
 
             //System.out.println("h = " + h + "to = " + termOne + "tt = " + termTwo + "tth = " + termThree + "tf = " + termFour + "q = " + q + "j = " + j + "k = " + k + "m = " + m);
 
-            h -= 1;
+            //h -= 1;
             h = (int) h % 7;
 
             switch ((int) h) {
