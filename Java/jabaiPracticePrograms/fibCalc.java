@@ -1,6 +1,8 @@
+package javaPracticeCodes;
+
 import java.util.Scanner;
 
-public class Main {
+public class fibCalc {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);

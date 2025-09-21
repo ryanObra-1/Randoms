@@ -1,7 +1,9 @@
+package jabaiPracticePrograms;// the input is a disaster and the first player's pick is shown instead of hidden in 2 player mode------
+
 import java.util.Scanner;
 
 public class rockPaperScissors {
-    public static void main(String[] args) {
+    public static void main() {
 
         Scanner sc = new Scanner(System.in);
 

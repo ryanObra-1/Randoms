@@ -1,3 +1,5 @@
+package javaPracticeCodes;
+
 import java.util.Scanner;
 
 public class set182025ftp {

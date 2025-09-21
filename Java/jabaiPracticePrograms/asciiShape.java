@@ -1,4 +1,4 @@
-import java.util.Scanner;
+package javaPracticeCodes;
 
 public class asciiShape {
 	public static void main(String[] args) {
