@@ -1,0 +1,155 @@
+PHASE 1
+=
+	Basic Syntax and Concepts
+=	
+		Variables 
+		/	primitive
+			/	byte
+			/	short
+			/	long
+			/	int
+			/	double
+			/	float
+			/	boolean
+			/	char
+=				
+			non-primitive
+			/	String
+			/	Array
+				Objects
+=				
+		Control Structure
+		/	if-else
+			switch-case
+			loops
+			/	for
+				for-in
+			/	while
+			/	do-while
+=
+		Methods 
+		/	declaration
+		/	Parameters
+		/	Return types
+=
+	/	Input/Output
+		/	Scanner
+		/	System.outprint
+=	
+	Practices
+=
+	/	Calculator
+	/	Temperature Converter
+	/	Number Guessing Game
+		To-Do List
+	/	Basic Bank Account System
+=	
+=	
+PHASE 2
+=
+	Core OOP Concepts
+=	
+		Classes and Objecs
+=		
+		Encapsulation
+			private fields
+			getters
+			setters
+=			
+		Inheritance
+			extending classes
+			using super
+=			
+		Polymorphism
+			method overriding and overloading
+=
+		Abstraction
+			abstract classes and interfaces
+=			
+		packagess and access modifiers
+			public
+			private
+			protected
+=
+	Learn Key Features
+=
+		constructors and method chaining
+		this and static keywords
+		exception handling
+			try-catch
+			throwing exception
+			custom exception
+=		
+	Practices
+=
+		library management
+		simple student database using classes and oop principles
+		car rental system with classes for car, customer, and rental
+=
+=
+PHASE 3		
+=
+	Java Collection Framework
+=
+		list
+			ArrayList
+			LinkedList
+=
+		Sets
+			HashSet
+			TreeSet
+=			
+		Maps
+			HashMap
+			TreeMap
+			iterating collections	
+=		
+	Data structures
+=
+		Array and String manipulation
+		Stack, Queues, and Linkked Lists implementing java classes
+=
+	File Handling
+
+		Reading/Writing Using 
+			File
+			BufferedReader
+			BufferedWriter
+
+	practices
+
+		cantact management system with file storage
+=
+=
+PHASE 4
+= 
+	Advance Java concepts
+
+		generics
+			creating type safe classes and methods
+
+		multithreadig
+			threads
+			runnable
+			schronization basics
+
+		lambda expressions and stream API for functional programming
+
+		java i/o
+			nio package for advanced file handling
+
+	introduction to frameworks
+
+		spring boot
+			for web application (rest api)
+
+		JavaFX or Swing
+			for desktop gui apps
+
+		JDBC
+			connect java to databases (eg, sql)
+
+	practices
+
+		
+			
