@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af664c2a-5250-42b4-8388-198e6f168bec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Java/jabaiPracticePrograms/bankingSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/ideaRunner/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/ideaRunner/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/ideaRunner/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/ideaRunner/.idea/material_theme_project_new.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/ideaRunner/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/ideaRunner/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/ideaRunner/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/ideaRunner/pricticeProgram.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/ideaRunner/src/ticTacToe.java" beforeDir="false" />
-    </list>
+    <list default="true" id="af664c2a-5250-42b4-8388-198e6f168bec" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
