@@ -15,7 +15,7 @@ public class maxMinValuesOfDataTypes {
 								int inT = Integer.MAX_VALUE;
 								float floaT = Float.MAX_VALUE;
 								double doublE = Double.MAX_VALUE;
-								String bool = "true / 1";
+								String bool = "true / ...-1/1... ";
 								//boolean = true;
 								
 								System.out.print("max value of:\n\n byte = " + bytE + "\n short = " + shorT + "\n long = " + lonG + "\n char = " + chR + "\n int = " + inT + "\n float = " + floaT + "\n double = " + doublE + "\n boolean = " + bool + "\n\n");
