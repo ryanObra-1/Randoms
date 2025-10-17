@@ -1,4 +1,3 @@
-import java.util.Objects;
 import java.util.Scanner;
 
 public class mmwFormulasDashMixAndMatch {
@@ -57,7 +56,6 @@ public class mmwFormulasDashMixAndMatch {
 
                     output = numOne;
                     for (int i = 1; i <= n; i++) {
-                        ;
                         System.out.print(output);
                         if (i < n) {
                             System.out.print(", ");

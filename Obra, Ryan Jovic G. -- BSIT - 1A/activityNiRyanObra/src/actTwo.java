@@ -10,20 +10,24 @@ public class actTwo {
         double total;
         String reRun;
 
-        System.out.println("Electricity bill chart\n-Up to 100kWh -> P5.00 per kWh\n-101-300 kWh -> P6.00 per Kwh\n-301-500 kWh -> P7.00 per kWh\n-Above 500 kWh -> P8.00 per kWh");
+        System.out.println("Electricity bill chart" +
+                "\n-Up to 100kWh -> P5.00 per kWh" +
+                "\n-101-300 kWh -> P6.00 per Kwh" +
+                "\n-301-500 kWh -> P7.00 per kWh" +
+                "\n-Above 500 kWh -> P8.00 per kWh");
 
         do {
 
             System.out.print("Enter consumption (kWh): ");
             elecConsump = sc.nextInt();
 
-            if (elecConsump < 101) {
+            if (elecConsump <= 100) { // less than 100
                 eP = 5.00;
-            } else if (elecConsump > 100 && elecConsump < 301) {
+            } else if (elecConsump <= 300) { // < or = to 300
                 eP = 6.00;
-            } else if (elecConsump > 300 && elecConsump < 501) {
+            } else if (elecConsump <= 500) { // < or = to 500
                 eP = 7.00;
-            } else if (elecConsump > 500) {
+            } else if (elecConsump > 501) { // > or = to 501
                 eP = 8.00;
             }
 

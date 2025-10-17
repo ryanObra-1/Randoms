@@ -9,11 +9,17 @@ public class actFour {
         char grade;
         String remark;
 
-        System.out.println("GWA computer");
+        System.out.println("GWA computer\n" +
+                "Average - Grade - Remarks\n" +
+                "90-100     A      Excellent\n" +
+                "80-89      B      Very Good\n" +
+                "70-79      C      Good\n" +
+                "60-69      D      Fair\n" +
+                "Below 60   F      Failed");
 
         do {
             // user input
-            System.out.print("Enter first-fifth grades (0-100): ");
+            System.out.print("Enter 5 subject grades (0-100): ");
             int firstSub = sc.nextInt();
             int secondSub = sc.nextInt();
             int thirdSub = sc.nextInt();
@@ -21,7 +27,7 @@ public class actFour {
             int fifthSub = sc.nextInt();
 
             //compute for avearage (n1+n2+...)/totalItem
-            int average = (firstSub + secondSub + thirdSub + fourthSub + fifthSub) / 5;
+            float average =(float) (firstSub + secondSub + thirdSub + fourthSub + fifthSub) / 5;
             System.out.print("Average: " + average);
 
             //check grade values and initialize a values to grade and remark

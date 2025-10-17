@@ -12,15 +12,12 @@ public class actThree {
 
         do {
 
-            System.out.print("Enter a year: ");
+            System.out.print("Enter year: ");
             year = sc.nextInt();
 
             if (year % 4 == 0) {
-                System.out.print(year + " is a leap year.");
-                if(year % 100 == 0) {
-                    if (year % 400 == 0) {
-                        System.out.println(year + " is a leap year.");
-                    }
+                if((year % 100 != 0) || (year % 400 == 0)) {
+                    System.out.println(year + " is a leap year.");
                 }
             } else {
                 System.out.println(year + " is not a leap year.");
