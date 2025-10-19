@@ -52,6 +52,7 @@ public class rockPaperScissors {
                     System.out.print("\nplayer tweo enter your pick (rock/paper/scissor): ");
                     opponentsOpt = sc.nextLine().toLowerCase();
                 } while(!opponentsOpt.equals("rock") && !opponentsOpt.equals("paper") && !opponentsOpt.equals("scissors"));
+                
             }
 
             // nested sheets
