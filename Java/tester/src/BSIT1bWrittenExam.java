@@ -28,7 +28,7 @@ public class BSIT1bWrittenExam {
 
         } while(i != 11);
 
-        i = 0; // reset the ietrator reference
+        i = -1; // reset the ietrator reference
         
         System.out.println("\n" + nums + "\n");
 

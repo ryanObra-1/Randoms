@@ -25,7 +25,6 @@ public  class ticTacToe {
         char rcThTh = ' ';
 
         System.out.println("stupid ttt game");
-        System.out.println("Enter letter 'o' and 'x'\nthree times in a row, column or diagonal to win.\nPlayer one will select 'o' or 'x'\n'o' will play first\n");
 
         do {
             do {
@@ -54,12 +53,15 @@ public  class ticTacToe {
 
                 System.out.println("\nPlayer one(" + playerone + ") enter Row-Column number..");
 
-                System.out.print("row: ");
-                row = sc.nextInt();
+                do {
+                				System.out.print("row (-): ");
+                				row = sc.nextInt();
 
-                System.out.print("col: ");
-                col = sc.nextInt();
-
+                				System.out.print("col (|): ");
+                				col = sc.nextInt();
+                } while((row < 1 || row > 3) || (col < 1 || col > 3));    
+                    
+                    
                 if (row == 1 && col == 1) {
                     rcOO = playerone;
                 } else if (row == 1 && col == 2) {
@@ -90,11 +92,13 @@ public  class ticTacToe {
 
                 System.out.println("\nPlayer two(" + playerTwo + ") enter Row-Column number..");
 
-                System.out.print("row: ");
-                row = sc.nextInt();
+                do {
+                				System.out.print("row (-): ");
+                				row = sc.nextInt();
 
-                System.out.print("col: ");
-                col = sc.nextInt();
+                				System.out.print("col (|): ");
+                				col = sc.nextInt();
+                } while((row < 1 || row > 3) || (col < 1 || col > 3));    
 
                 if (row == 1 && col == 1) {
                     rcOO = playerTwo;
