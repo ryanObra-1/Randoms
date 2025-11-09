@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To My Personal Portfolio</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+<div class="container">
+
+<!-- 
+    <div class="themeToggler">
+        <input type="checkbox" class="themeInput">
+    </div> 
+-->
+
+
+    <!-- homepage -->
+    <div class="home">
+        <div class="homepageNav">
+            <span class="myNameLogo"></span>
+        </div>
+
+        <div class="leftSideMisc col-1"> 
+            <span class="followMeContainer">
+                <div class="followMe"><b>f <br>o <br>l <br>l <br>o <br>w <br><br>m <br>e</b><br></div>
+            </span>
+            <div class="leftVertLine"></div>
+        </div>
+
+        <div class="homeIntro col-10">
+            <div class="shortIntro">Hello, I'm Ryan. <br>AN ASPIRING <br>FULL-STACK <br>DEVELOPER</div>
+            <div class="doodlevArt">
+                <i><b>: )</b></i>
+            </div>
+        </div>
+
+        <div class="homeSocials col-1">
+            <div class="verticalLine"></div>
+            <div class="iconsTray">
+                <!-- should have used lists -->
+                <a href="https://www.facebook.com/share/1Ct9sQsYdT/">
+                    <img src="photo/icons/vecteezy_facebook-logo-png-facebook-icon-transparent-png_18930707.png" class="icons facebookLogo" alt="facebookLogo">
+                </a> <br>
+                <a href="https://discord.gg/xgqPWmhx"> 
+                    <img src="photo/icons/discord.png" class="icons discordLogo" alt="discordLogo">
+                </a> <br>
+                <a href="https://www.linkedin.com/in/ryan-obra-828481314?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"> 
+                    <img src="photo/icons/vecteezy_linkedin-icon-linkedin-social-media-logo_31737203.png" class="icons linkedinLogo" alt="linkedinLogo">
+                </a>
+            </div>
+        </div>
+
+        <div class="exploreBtnContainer">
+            <button class="exploreBtn" onclick="displayMainPage()">Explore</button>
+        </div>
+    </div>
+
+    <!-- sections -->
+    <div class="sectionsContainer">
+        <nav class="sectionsNav">
+            <span class="myNameLogo"></span>
+            <ul class="list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume" class="resumeNavBtn">Resume</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#blogSection">Blog</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="sectionSectionsContainer">
+            <div id="about" class="aboutSection row col-12">
+                <p class="sectionTitle">About me</p>
+                <div class="mottoForLife col-6">
+                    <p class="stP">I'M RYAN</p>
+                    <p class="ndP">AN ASPIRING FULL-STACK DEVELOPER</p>
+                    <p class="rdP">Errors are red, i'm in blue. Mason give me back my cleaning towel or i'll deploy those too.</p>
+                    <div id="resume" class="resumeContainer">
+                        <div class="resumeBtn"><a href="cv.txt">Resume</a></div>
+                    </div>
+                </div>
+                <div class="picProfessionContainer col-6">
+                    <img class="myPic" src="photo/myPhoto/received_514212896835049.jpeg" alt=":] ">
+                </div>
+
+                <div class="skillSection col-12">
+                    <p class="sectionTitle">My skills</p>
+                    <div class="mySkills">
+                        <div class="skill-1">
+                            skill 1
+                            <div class="skillLevel">
+                                <div class="levelOfS-1"></div>
+                            </div>
+                        </div>
+                        <div class="skill-2">
+                            skill 2
+                            <div class="skillLevel">
+                                <div class="levelOfS-2"></div>
+                            </div>
+                        </div>
+                        <div class="skill-3">
+                            skill 3
+                            <div class="skillLevel">
+                                <div class="levelOfS-3"></div>
+                            </div>
+                        </div>
+                        <div class="skill-4">
+                            English
+                            <div class="skillLevel">
+                                <div class="levelOfS-4"></div>
+                            </div>
+                        </div>
+                        <!-- add skill herre-->
+                    </div>
+                    <div class="languages">
+                        <span>Java</>
+                        <span class="dividerInLangs">|</span>
+                        <span>C++</span>
+                        <span class="dividerInLangs">|</span>
+                        <span>BF</span>
+                        <span class="dividerInLangs">|</span>
+                        <span>x86</span>
+                    </div>
+                </div>
+            </div>
+            
+    
+    
+    
+            <div id="portfolio" class="portfolioSection row col-12">
+                <p class="sectionTitle">Portfolio</p>
+                <div class="portfolioContainer">
+                    <div class="outputContainer output-1 col-4"></div>
+                    <div class="outputContainer output-2 col-4"></div>
+                    <div class="outputContainer textAndSeeAllContainer col-4">
+                        <p>See all my other outputs</p>
+                        <button class="seeAllOutputBtn col-8" onclick="litawPortfolioContainer()">See all</button>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolioCon" style="transition: none;">
+                <div class="return"></div>
+            </div>
+            
+            <div id="blogSection" class="blogSection row col-12">
+                <p class="sectionTitle"Blogs>Blog</p>
+                <div class="blogsContainer">
+                    <div class="indivCon ">
+                        <div class="message"></div>
+                    </div>
+                    <div class="indivCon ">
+                        <div class="message"></div>
+                    </div>
+                </div>
+                <button type="button" onclick="litawlogContainer()">see all  testimonials</button>
+                <div class="fbCon">
+                    <div class="return"></div>
+                </div>
+            </div>
+    
+    
+            <footer id="contacts" class="contactsSection row col-12">
+                <p class="sectionTitle">Contacts</p>
+                <div class="con">
+                    <div class="emailPhone col-6">
+                        <ul>
+                            <li>
+                               <img src="photo\icons\phone-call.png" alt="e:"> (+63)-966-438-2288
+                            </li>
+                            <br>
+                            <li>
+                                 <img src="photo\icons\mail.png" alt="p:"> <a href="mailto:ryanobra10@gmail.com">  ryanobra10@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="formContainer col-6">
+                        <p>Get in touch</p>
+                        <form action="" method="post">
+                            <input type="text" name="clientMessage" id="clientMessage" placeholder="Message">
+                            <input type="email" name="clientEmail" id="clientEmail" placeholder="Email">
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+
+    </div>
+    <script src="designFunc.js"></script>
+
+</div>
+
+</body>
+</html>

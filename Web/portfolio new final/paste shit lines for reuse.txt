@@ -1,0 +1,53 @@
+// 0 = [class*=col-] 
+    background-color: aquamarine;
+    border-right: 1px solid #ec0909;
+
+// 1
+
+    position: absolute;
+    bottom: 0;
+    left: 1%;
+
+// 2
+
+    display: block;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.6em;
+    text-align: center;
+    font-weight: bold;
+    text-wrap: nowrap;
+    word-spacing: 5pt;
+    width: 4rem;
+    height: fit-content;
+    
+    transform: rotateZ(90deg);
+
+// 3
+
+
+                    <div class="blog-3 ">
+                        <div class="leftSquare">
+                        </div>
+                        <div class="comment"></div>
+                    </div>
+                    <div class="blog-4 ">
+                        <div class="leftSquare">
+                        </div>
+                        <div class="comment"></div>
+                    </div>
+                    <div class="blog-5 ">
+                        <div class="leftSquare">
+                        </div>
+                        <div class="comment"></div>
+                    </div>
+// 4
+
+
+        home.style.trasnsitionDuration = '0.3s';
+        home.style.transitionFunction = 'ease';
+// 5 
+    home.style.display = 'none';
+    sections.style.display = 'block';
+
+    

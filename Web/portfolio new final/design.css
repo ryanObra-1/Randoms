@@ -1,0 +1,616 @@
+* {
+    box-sizing: border-box;
+}
+
+/* mwuaahahahahaha */
+/*
+*:hover {
+    display: none;
+}
+*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+} 
+body {
+    font-family: sans-serif;
+    background-image: linear-gradient(135deg, #0f0f0f, #000000);
+}
+:root {
+    --bgc-var1: #181524;
+    --bgc-var2: #0f0f0f;
+    --bgc-p1: linear-gradient(to right, #2b5876, #4e437);
+    --bgc-p2: ;
+    --opa-high: 87%;
+    --opa-mid: 60%;
+    --opa-ml: 40%; 
+    --opa-low: 38%;
+    --fullScreenHeight: 100vh;
+    --sectionsWidth: 96%
+}
+
+
+/* theme toggler 
+.themeToggler {
+    position: fixed;
+    bottom: 2vh;
+    right: 3%;
+}
+.themeToggler > input {
+    cursor: pointer;
+}
+    */
+
+
+/* pic - icons */
+.myPic > img{
+    max-width: 18%
+}
+.icons {
+    max-width: 50%;
+}
+.discordLogo{
+    margin-top: 0;
+    padding: 0;
+    max-width: 40%;
+    background-color: #fff;
+    border-radius: 2px;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: #0f0f0f;
+    background: none;
+}
+
+
+.container {
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+/* home page desgin */
+.home {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100vh;
+    margin: 0;
+    padding: 0;
+    transition: all .3s ease-out;
+    color: #fff;
+    overflow-y: hidden;
+}
+.homepageNav {
+    text-align: left;
+    padding: 2vh 0 0 2vh;
+}
+.myNameLogo::before{
+    content: 'RYAN.';
+    font-family: fantasy, sans-serif;
+    letter-spacing: 2pt;
+    font-weight: 1000;
+    opacity: var(--opa-high);
+}
+
+.homeSocials {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 90vh;
+    text-align: center;
+}
+.iconsTray {
+    display: block;
+}
+.iconsTray a {
+    margin: 0 auto;
+    opacity: var(--opa-mid);
+}
+
+.verticalLine {
+    margin: auto;
+    width: 1px;
+    height: 40%;
+    border: 1.5px solid;
+    border-radius: 20px;
+    opacity: var(--opa-low);
+}
+.homeIntro {
+    height: 94vh;
+    display: flex;
+    padding-left: 2%;
+}
+.shortIntro{
+    align-self: center;
+    text-wrap: nowrap;
+    text-align: left;
+    font-weight: 1000;
+    font-size: 3em;
+    line-height: 150%;
+    opacity: var(--opa-high);
+}
+.shortIntro::first-line {
+    line-height: 20%;
+    font-size: 0.5em;
+    font-weight: bold;
+    opacity: var(--opa-mid);
+}
+.doodlevArt {
+    display: none;
+}
+
+.leftSideMisc {
+    height: 90vh;
+}
+.followMeContainer {
+    margin-bottom: 3vh;
+}
+.followMe {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.6em;
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 5pt;
+    width: 4rem;
+    height: 5rem;
+}
+.leftVertLine {
+    margin: 0 auto;
+    width: 1px;
+    height: 40%;
+    border: 1.5px solid;
+    border-radius: 20px;
+    align-self: baseline;
+}
+.leftSideMisc > .leftVertLine, .followMeContainer {
+    position: relative;
+    display: flex;
+    transform: translateY(50vh);
+    opacity: var(--opa-low);
+}
+
+.exploreBtnContainer {
+    position: absolute;
+    right: 40%;
+    bottom: 10%;
+}
+.exploreBtn {
+    max-width: 6rem;
+    width: 5rem;
+    height: 3rem;
+    border: none;
+    border-radius: 20px 5px 20px 0;
+    padding: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    box-shadow: 1px 1px 4px 1px #333;
+    cursor: pointer;
+}
+
+
+    
+    /* sections display: none;*/
+.sectionsContainer {
+    opacity: 0;
+    max-width: 100%;
+    color: #fff;
+    transition: .3S ease-in;
+}
+.row {
+    height: fit-content;
+    padding: 1vh;
+    padding-top: 10vh;
+}
+.sectionTitle {
+    text-align: left;
+    text-wrap: nowrap;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+/* about/skill */
+.sectionsNav {
+    background-image: linear-gradient(to right, #2b5876, #233463);
+    width: 100%;
+    height: 7vh;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    flex: auto;
+    justify-content: end;
+    align-items: center;
+    color: #fff;
+}
+.sectionsNav > .myNameLogo {
+    position: absolute;
+    top: 30%;
+    left: 2vh;
+}
+.sectionsNav ul {
+    margin-right: 1vh;
+}
+.sectionsNav li {
+    display: inline;
+}
+@media screen and (max-width: 699px){
+    .sectionsNav li:nth-child(2) {
+        display: none;
+    }
+}
+.sectionsNav a {
+    color: #fff;
+    flex: 1 0 5rem;
+    padding: 1vh;
+    font-size: .9em;
+    font-weight: bold;
+    opacity: var(--opa-high);
+}
+
+.aboutSection > div {
+    height: fit-content;
+}
+.mottoForLife {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: fit-content;
+    min-width: 10rem;
+    max-width: 15rem;
+    padding-left: 2%;
+}
+.mottoForLife > p {
+    padding: 0;
+    margin: 0;
+}
+.stP {
+    font-size: 1em;
+    font-weight: bolder;
+}
+.ndP {
+    line-height: 90%;
+    font-size: 2em;
+    font-weight: 900;
+    opacity: var(--opa-high);
+}
+.rdP {
+    font-size: .8em;
+    opacity: var(--opa-low);
+}
+.resumeContainer {
+    margin-top: 2vh;
+    justify-self: left;
+}
+.resumeContainer > div {
+    background-color: #fff;
+    border: none;
+    padding: 1vh 2vh 1vh 2vh;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #000000;
+    font-size: small;
+    font-weight: bold;
+}
+.picProfessionContainer {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.myPic{
+    max-width: 80%;
+    height: 70%;
+    border-radius: 10px;
+    outline: #181524 double 3px;
+}
+
+.skillSection {
+    margin-top: 10vh;
+    width: 100%;
+    height: fit-content;
+}
+.mySkills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1vh;
+    padding: 1vh;
+}
+.mySkills > div {
+    flex: 1 0 10rem;
+    font-size: small;
+    background-color: #787a6a;
+    padding: 1%;
+    border-radius: 10px;
+    align-content: center;
+}
+.skillLevel {
+    background-color: #fff;
+    border-radius: 15px; 
+    margin-top: 1%;
+    width: 100%;
+    height: 2vh;
+}
+/* set/update skill-level here */ 
+.levelOfS-1 {
+    background-color: #333;
+    border-radius: 15px;
+    height: 100%;
+    width: 30%;
+}
+.levelOfS-2 {
+    background-color: #333;
+    border-radius: 15px;
+    height: 100%;
+    width: 50%;
+}
+.levelOfS-3 {
+    background-color: #333;
+    border-radius: 15px;
+    height: 100%;
+    width: 20%;
+}
+.levelOfS-4 {
+    background-color: #333;
+    border-radius: 15px;
+    height: 100%;
+    width: 60%;
+}
+.languages {
+    width: 100%;
+    display: center;
+    text-align: center;
+}
+.languages > .dividerInLangs {
+    margin: 0 10% 0 10%;
+}
+
+/* portfolio */
+.portfolioSection {
+    width: 100%;
+    height: fit-content;
+}
+.portfolioContainer {
+    display: flex;
+    gap: 1vh;
+    justify-content: center;
+}
+.outputContainer {
+    background-color: rgb(109, 116, 102);
+    height: 20vh;
+}
+.textAndSeeAllContainer {
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1vh;
+}
+.textAndSeeAllContainer > p {
+    font-size: .9rem;
+
+}
+.seeAllOutputBtn {
+    height: 2rem;
+    border-radius: 15px;
+    border: none;
+
+}
+.portfolioCon, .fbCon {
+    visibility: hidden;
+    z-index: 2;
+    position: fixed;
+    top: 10vh;
+    left: 10%;
+    display: flex;
+    border-radius: 20px;
+    background-color: #818181;
+    width: 80%;
+    height: 80vh;
+    transition: .3s ease-in-out;
+}
+.return {
+    background-color: #181524;
+    width: 7vh;
+    height: 5vh;
+    margin: 1vh 0 1vh 1vh;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.blogSection {
+    display: flex;
+    flex-direction: column;
+}
+.blogsContainer {
+    display: flex;
+    justify-content: space-evenly;
+    max-height: 40vh;
+}
+.blogsContainer::-webkit-scrollbar {
+    width: 0;
+}
+.blogsContainer > div {
+    display: block;
+    padding: 0 1vh 1vh 1vh;
+    width: 10rem;
+    height: 20vh;
+    background-color: #fff;
+}
+.blogSection button {
+    justify-self: center;
+    align-self: center;
+    margin-top: 2vh;
+    border-radius: 10px;
+    border: none;
+    width: 70%;
+    height: 2rem;
+
+}
+
+
+.contactsSection {
+    height: fit-content;
+}
+.con {
+    display: flex;
+    padding: 0 0 5vh 5vh;
+    height: fit-content;
+}
+.emailPhone {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-items: start;
+    align-items: center;
+    text-align: left;
+    font-size: x-small;
+    font-weight: bold;
+    text-wrap: nowrap;
+    float: left;
+}
+.emailPhone ul {
+    color: #fff;
+}
+.emailPhone ul li {
+    margin: .5rem;
+}
+.emailPhone img {
+    filter: invert();
+    padding-right: 1vh;
+    min-width: 1rem;
+    max-width: 20%;
+    transform: translateY(.5vh);
+}
+.emailPhone a {
+    color: #fff;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 1vh;
+}
+.formContainer > p {
+    font-size: small;
+    font-weight: bold;
+    line-height: 1vh;
+}
+.formContainer > form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+.formContainer > form > input, button {
+    border:none;
+    border-radius: 5px;
+} 
+.formContainer > form > input {
+    flex: 1 0 10rem;
+    max-width: 100%;
+    height: 3vh;
+}
+.formContainer > form > button {
+    flex: 1 0 5rem;
+    max-width: 100%;
+    height: 3vh;
+}
+
+/* homepage media query */
+@media (min-width: 700px) {
+    /* homepage */
+    .iconsTray a img {
+        max-width: 30%;
+        margin: 0 20px;
+    }
+    .verticalLine {
+        max-height: 35vh;
+    }
+    .shortIntro {
+        font-size: 3em;
+        width: 25rem;
+        max-width: 100%;
+    }
+    .doodlevArt {
+        display: flex;
+        margin: auto;
+        align-self: center;
+        max-width: 15rem;
+        max-height: 15rem;
+        background-color: #fff;
+        cursor: pointer;
+        border: 1px solid #333;
+    }
+    .followMeContainer {
+        display: flex;
+        justify-content: center;
+        transform: translateY(37vh);
+    }
+    .followMe {
+        font-size: .7em;
+    }
+
+    /* sections */
+    .sectionsContainer {
+        display: flex;
+
+    }
+    .sectionsContainer:not(footer) {
+
+    }
+    .sectionsNav {
+
+    }
+    .aboutSection {
+
+    }
+    .mySkills {
+
+    }
+    .portfolioContainer {
+
+    }
+    footer {
+        
+    }
+
+
+}
+
+
+/* 
+grid view
+RUUUUULEES!!!!!!
+*/
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+[class*=col-] {
+    float: left;
+}
+
+/*
+ 12 rule or whatever. every column should be equal to 12 
+(e.g., 3 * 4 = 12 with three column you should use col-4) 
+----------- i'm so good with explanations --------------
+*/
+.col-1 {width: 8.33333333%;}
+.col-2 {width: 16.66666667%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33333333%;}
+.col-5 {width: 41.66666667%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33333333%;}
+.col-8 {width: 67.66666667%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33333333%;}
+.col-11 {width: 91,66666667%;}
+.col-12 {width: 100%;}
