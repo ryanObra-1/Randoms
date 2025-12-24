@@ -68,7 +68,7 @@ public class mmwFormulasDashMixAndMatch {
                         // sum of the sequence
                         if (i == n) {
                             System.out.println("\nSum of the sequence is: " + extra);
-                        }
+                           }
                     }
                 }
                 // next case here -------

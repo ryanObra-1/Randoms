@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class factorial {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a positive integer: ");
+        int fctor = scanner.nextInt();
+
+        if (fctor < 0) {
+            System.out.println("Please enter a positive integer.");
+        } else {
+            long factorial = 1;
+            int i = 1;
+            while (i <= fctor) {
+                factorial *= i;
+                i++;
+            }
+            System.out.println("Factorial of " + fctor + " is " + factorial);
+        }
+
+        scanner.close();
+    }
+}
