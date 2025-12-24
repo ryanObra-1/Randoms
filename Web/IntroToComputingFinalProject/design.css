@@ -1,17 +1,129 @@
-body { font-family: Arial, sans-serif; margin: 0; transition: background 0.3s, color 0.3s; }
-body.dark { background: #121212; color: #e0e0e0; }
 
-header { display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: #333; color: white; }
-.logo { font-size: 1.5rem; font-weight: bold; }
-#dark-mode-toggle { background: none; border: none; font-size: 1.5rem; cursor: pointer; }
+* {
+    box-sizing: border-box;
+    outline-width: 1px;
+    outline-style: dashed;
+    outline-color: #ffdd00;
+}
+/*
+*:hover { 
+    display: none;
+}
+*/
+html, body {
+    margin: 0;
+    padding: 0;
+}
 
-nav { background: #444; padding: 1rem; text-align: center; }
-nav a { color: white; margin: 0 1rem; text-decoration: none; }
+/* column of 12 */
+[class*=col-] {
+    content: "";
+    display: block;
+    clear: both;
+}
+.col-1 { width: 8.33333333%;}
+.col-2 { width: 16.66666667%;}
+.col-3 { width: 25%;}
+.col-4 { width: 33.33333333%;}
+.col-5 { width: 41.66666667%;}
+.col-6 { width: 50%;}
+.col-7 { width: 58.3333333%;}
+.col-8 { width: 67.66666667%;}
+.col-9 { width: 75%;}
+.col-10 { width: 83.33333333%;}
+.col-11 { width: 91.66666667%;}
+.col-12 { width: 100%;}
 
-.products { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; padding: 2rem; }
-.product-card { border: 1px solid #ddd; padding: 1rem; text-align: center; border-radius: 8px; }
-body.dark .product-card { border-color: #444; background: #1e1e1e; }
-.product-card img { max-width: 100%; }
-.product-card button { padding: 0.5rem 1rem; background: #007bff; color: white; border: none; cursor: pointer; }
+:root { /* variables */
+    --bgc-greenish: #7ed957; 
+    --bgc-1stPanel: linear-gradient(to right, #0a0d13, rgba(10, 13, 19, .5));
+    --bgc-2ndPanel: linear-gradient(to right, #737373, rgba(115, 115, 115, .5));
+    --bgc-3rdPanel: #23242b;
+    --bgc-4thPanel: #191919;
+    --bgc-5thPanel: #000f16;
+    --font-heading: "Cooper Hewitt", sans-serif;
+    --font-paragraph: "work Sans", sans-serif;
+    --fontSize-normal: 15px;
+    --fontSize-small: 10px;
+    --fontSize-normal: 10px;
+    --opacity-low: 30%;
+    --height-max: 100vh;/* screen_based */
+}
 
-footer { text-align: center; padding: 1rem; background: #333; color: white; }
+/* header */
+header {
+    height: 3%;
+    display: flex;
+}
+header > span > span {
+    font-size: 10px;
+    font-family: var(--font-paragraph);
+    margin: 0 0 0 10px;
+}
+header > .firstHalf > .headerLocation::after {
+    content: 'Sitio San Pedro, San Miguel, Natividad, Pangasinan'
+}
+header > .firstHalf > .headerPhone::after {
+    content: '(+63)-927-6164-642';
+} 
+header > .secondHalf > img {
+    margin: auto;
+}
+
+/* Navigation */
+nav {
+    position: fixed;
+    top: 3%;
+    right: 0;
+}
+nav ul {
+    display: flex;
+    justify-content: right;
+    list-style-type: none;
+}
+nav li {
+    margin-right: 20px;
+    white-space: nowrap;
+    text-align: center;
+}
+nav a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 15px;
+    font-family: var(--font-paragraph);
+}
+
+
+/* home */
+.home {
+    height: var(--height-max);
+    font-size: 50px;
+}
+.home h3 {
+    font-family: var(--font-heading);
+}
+
+/* about */
+.about {
+    height: var(--height-max);
+}
+
+/* services */
+.services {
+    height: var(--height-max);
+}
+
+/* projects */
+.projects {
+    height: var(--height-max);
+}
+
+/* contact_us */
+.contact_us {
+    height: var(--height-max);
+}
+
+/* footer */
+footer {
+    height: ;
+}

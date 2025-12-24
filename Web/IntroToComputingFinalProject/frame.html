@@ -2,45 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="theme-color" content="#7ed957">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My E-Shop</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>webNiPoriman</title>
+    <link rel="stylesheet" href="design.css">
 </head>
 <body>
-    <header>
-        <div class="logo">E-Shop</div>
-        <button id="dark-mode-toggle">🌙 Dark Mode</button>
-    </header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Products</a>
-        <a href="#">Cart (0)</a>
+
+<!--HEADER-->    
+     <header>
+        <span class="firstHalf col-6">
+            <span class="headerLocation">
+                <img src="" alt="LocationIcon">
+            </span>
+            <span class="headerPhone">
+                <img src="" alt="PhoneNumberIcon">
+            </span>
+        </span>
+        <span class="secondHalf col-6">
+            <img src="" alt="socialLogo">
+        </span>
+    </header>   
+
+<!--NAVI-->        
+    <nav class=" col-6">
+        <ul>
+            <li>
+                <a href="#home" class="col-2">Home</a>
+            </li>
+            <li>
+                <a href="#about" class="col-2">About</a>
+            </li>
+            <li>
+                <a href="#services" class="col-2">Services</a>
+            </li>
+            <li>
+                <a href="#projects" class="col-2">Projects</a>
+            </li>
+            <li>
+                <a href="#contact_us" class="col-2">Contact Us</a>
+            </li>
+        </ul>
     </nav>
+
+
+<!--MAIN_CONTENT-->    
     <main>
-        <section class="products">
-            <div class="product-card">
-                <img src="https://via.placeholder.com/200" alt="Product 1">
-                <h3>Product 1</h3>
-                <p>$29.99</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="https://via.placeholder.com/200" alt="Product 2">
-                <h3>Product 2</h3>
-                <p>$39.99</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="https://via.placeholder.com/200" alt="Product 3">
-                <h3>Product 3</h3>
-                <p>$49.99</p>
-                <button>Add to Cart</button>
-            </div>
+        <!--HOME-->
+        <section class="home col-12" id="home">
+            <h3>Tame Any Site, <br>Conquer Every Project.</h3>
         </section>
+        <!--AABOUT-->
+        <section class="about col-12" id="about">
+
+        </section>
+        <!--SERVICES-->
+        <section class="services col-12" id="services">
+
+        </section>
+        <!--PROJECTS-->
+        <section class="projects col-12" id="projects">
+
+        </section>
+        <!--CONTACT_US-->
+        <section class="contact_us col-12" id="contact_us">
+
+        </section>    
     </main>
+
+
+<!--FOOTER-->
     <footer>
         <p>&copy; 2025 E-Shop</p>
     </footer>
-    <script src="script.js"></script>
+
+<!--SCRIPT-->    
+    <script src="functionality.js"></script>
 </body>
 </html>
