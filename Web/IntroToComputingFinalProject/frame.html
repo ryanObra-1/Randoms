@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="theme-color" content="#7ed957">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>webNiPoriman</title>
+    <title>WildBoar co.</title>
     <link rel="stylesheet" href="design.css">
 </head>
 <body>
@@ -25,19 +25,19 @@
     <nav class=" col-6">
         <ul>
             <li>
-                <a href="#home" class="col-12">Home</a>
+                <a href="#home" class="active col-12">Home</a>
             </li>
             <li>
-                <a href="#about" class="col-12">About</a>
+                <a href="#about" class="activeOne col-12">About</a>
             </li>
             <li>
-                <a href="#services" class="col-12">Services</a>
+                <a href="#services" class="activeTwo col-12">Services</a>
             </li>
             <li>
-                <a href="#projects" class="col-12">Projects</a>
+                <a href="#projects" class="activeThree col-12">Projects</a>
             </li>
             <li>
-                <a href="#contact_us" class="col-12">Contact Us</a>
+                <a href="#contact_us" class="activeFour col-12">Contact Us</a>
             </li>
         </ul>
     </nav>
@@ -47,10 +47,10 @@
     <main>
         <!--HOME-->
         <section class="home col-12" id="home">
-            <div class="backdrop col-12"></div>
+            <img class="backdrop col-12" src=""></img>
             <div class="homeFirstHalf col-6">
-                <h3>Tame Any Site, <br>Conquer Every Project.</h3>
-                <p></p>
+                <h3><b>Tame Any Site, <br>Conquer Every Project.</b></h3>
+                <p>WildBoar provides reliable and transparent manpower solutions for industries needing skilled and efficient labor.</p>
             </div>
             <div class="homeSecondHalf col-6">
                 <button class="larnMoreBtn">Learn More</button>
@@ -60,34 +60,110 @@
         <section class="about col-12" id="about">
             <div class="backdrop col-12"></div>
             <p class="paragraphOne">
-
-            </p>
+                We connect homeowners, developers, and general contractors with trusted, experience contractors and subcontractors across most construction trades. </br>
+                With decades of expertise, we deliver high-quality, timely projects that strengthen communities
             <span class="dividerLine col-3"></span>
-            <p class="paragraphTwo">
-                
+                Trusted by governments, developers, and homeowners for strength, precision, and lasting impact.</br>
+                Our platform simplifies the bidding and hiring process fast and transparent projects.
             </p>
         </section>
         <!--SERVICES-->
         <section class="services col-12" id="services">
-
+            <h1>
+                Our Services
+            </h1>
+            <p>
+                Specializing in infrastructure that lasts generations.
+            </p>
+            <main>
+                <div class="box">
+                    <img src="" alt="">
+                </div>
+                <div class="box">
+                    <img src="" alt="">
+                </div>
+                <div class="box">
+                    <img src="" alt="">
+                </div>
+                <div class="box">
+                    <img src="" alt="">
+                </div>
+                <div class="box">
+                    <img src="" alt="">
+                </div>
+            </main>
         </section>
+
         <!--PROJECTS-->
         <section class="projects col-12" id="projects">
+            <p>We’re proud to partner with award winning Architects from across the country to make brilliant design a reality in. Our firm accepts a limited quantity of projects a year to ensure hands on, white glove service at every step. Explore a few of our recent builds below.</p>
+            <main>
+                <div>
+                    <div class="project">
 
+                    </div>
+                    <div class="project">
+
+                    </div>
+                    <div class="project">
+
+                    </div>
+                    <div class="project">
+
+                    </div>
+                    <div class="project">
+
+                    </div>
+                    <div class="project">
+
+                    </div>
+                </div>
+                <div class="opaqueBackdrop"></div><!--use :after and :before for lines-->
+            </main>
+            <p>Ready to build something exciting?</p>
         </section>
+
         <!--CONTACT_US-->
         <section class="contact_us col-12" id="contact_us">
-
+            <main>
+                <div class="contactFirstHalf">
+                    <div>
+                        <h1>
+                           Get Your Project Started Today
+                        </h1>
+                        <p>
+                            Contact us for expert heavy civil contracting.
+                        </p>
+                    </div>
+                    <div>
+                        <div>
+                            <form action="input" method="post"></form>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactSecondHalf">
+                    
+                </div>
+            </main>
         </section>    
     </main>
 
 
 <!--FOOTER-->
     <footer>
-        <p>&copy; 2025 E-Shop</p>
+        <h6>&copy; 2025 WildBoar. All rights reserved.</h6>
     </footer>
 
-<!--SCRIPT-->    
-    <script src="functionality.js"></script>
+<!--SCRIPT  :]-->    
+    <script>
+        document.querySelectorAll('p').forEach(p => {
+            let words = p.textContent.trim().split(/\s+/);
+            if (words.length > 1) {
+                let first = words.shift();
+                let last = words.pop();
+                p.innerHTML = `<span style="color: #7ed957">${first}</span> ${words.join(' ')} <span style="color: #7ed957">${last}</span>`;
+            }
+        });
+    </script>
 </body>
 </html>
