@@ -1,9 +1,10 @@
 
 * {
     box-sizing: border-box;
-    outline-width: 1px;
+    /* remove receding after */
+    outline-width: 2px;
     outline-style: dashed;
-    outline-color: #ffdd00;
+    outline-color: red;
 }
 /*
 *:hover { 
@@ -52,39 +53,46 @@ html, body {
 
 /* header */
 header {
+    position: absolute;
+    z-index: 1;
+    background-color: #ffdd00;
     height: 3%;
-    display: flex;
 }
 header > span > span {
     font-size: 10px;
     font-family: var(--font-paragraph);
     margin: 0 0 0 10px;
 }
-header > .firstHalf > .headerLocation::after {
+header > span > .headerLocation::after {
     content: 'Sitio San Pedro, San Miguel, Natividad, Pangasinan'
 }
-header > .firstHalf > .headerPhone::after {
+header > span > .headerPhone::after {
     content: '(+63)-927-6164-642';
 } 
-header > .secondHalf > img {
-    margin: auto;
-}
 
 /* Navigation */
 nav {
-    position: fixed;
-    top: 3%;
+    position: sticky;
+    top: 0;
     right: 0;
+    float: right;
+    height: 0;
 }
 nav ul {
+    margin: 0;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     list-style-type: none;
 }
 nav li {
-    margin-right: 20px;
+    height: 112px;
+    width: 120px;
     white-space: nowrap;
     text-align: center;
+    padding-top: 90px;
+}
+nav li:last-child {
+    margin: 0 20px 0 0;
 }
 nav a {
     text-decoration: none;
@@ -94,8 +102,10 @@ nav a {
 }
 
 
+
 /* home */
 .home {
+    background-color: #7ed957;
     height: var(--height-max);
     font-size: 50px;
 }
@@ -125,5 +135,5 @@ nav a {
 
 /* footer */
 footer {
-    height: ;
+    height: 3%;
 }
