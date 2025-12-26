@@ -4,7 +4,7 @@
     /* remove receding after */
     outline-width: 2px;
     outline-style: dashed;
-    outline-color: red;
+    outline-color: rgb(181, 190, 18);
 }
 /*
 *:hover { 
@@ -38,7 +38,7 @@ html, body {
 :root { /* variables */
     --bgc-greenish: #7ed957; 
     --bgc-1stPanel: linear-gradient(to right, #0a0d13, rgba(10, 13, 19, .5));
-    --bgc-2ndPanel: linear-gradient(to right, #737373, rgba(115, 115, 115, .5));
+    --bgc-2ndPanel: linear-gradient(to right, #000000, rgba(115, 115, 115, .5));
     --bgc-3rdPanel: #23242b;
     --bgc-4thPanel: #191919;
     --bgc-5thPanel: #000f16;
@@ -46,10 +46,10 @@ html, body {
     --textColor: #ffffe0;
     --font-heading: "Cooper Hewitt", sans-serif;
     --font-paragraph: "work Sans", sans-serif;
-    --fontSize-heading: 52px;
+    --fontSize-heading: 2.5em;
     --fontSize-normal: 15px;
     --fontSize-small: 10px;
-    --opacity-low: 30%;
+    --opacity-low: 0.6;
     --height-max: 100vh;/* screen_based */
 }
 
@@ -88,7 +88,7 @@ nav ul {
     list-style-type: none;
 }
 nav li {
-    height: 112px;
+    height: 80px;
     width: 120px;
     white-space: nowrap;
     text-align: center;
@@ -97,7 +97,7 @@ nav li {
 nav ul li:hover {
     background: var(--bgc-greenish);
 }
-nav ul li.active, nav ul li.activeOne, nav ul li.activeTwo, nav ul li.activeThree, nav ul li.activeFour {
+nav ul .active {
     background: var(--bgc-greenish);
 }
 nav li:last-child {
@@ -105,15 +105,38 @@ nav li:last-child {
 }
 nav a {
     height: 100%;
-    padding-top: 12vh;
+    padding-top: 8vh;
     text-decoration: none;
-    color: #000000;
+    color: var(--textColor);
     font-size: 15px;
     font-family: var(--font-paragraph);
+}
+nav a.active {
+    color: #000f16;
 }
 
 .lastWord, .firstWord {
     color: var(--bgc-greenish);
+}
+
+
+.divider {
+    height: 4rem;
+    width: 150vh;
+    overflow: hidden;
+    background: #7ed957;
+    margin: 0;
+}
+
+.home_about {
+
+}
+
+
+
+section {
+    padding: 0;
+    margin: 0;
 }
 
 /* home */
@@ -122,22 +145,26 @@ nav a {
     height: var(--height-max);
 }
 .home > .backdrop {
-    height: var(--height-max);
+    height: calc(var(--height-max) + 50vh);
+    width: 110%;
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
+    top: -33vh;
+    left: -10vh;
+    z-index: -2;
+    filter: brightness(.8);
 }
-.home > .backdrop::after {
+.home > .opaqueBackdropHome {
     height: var(--height-max);
     position: absolute;
     top: 0;
     right: 0;
     z-index: -1;
-    background-color: yellow;
+    opacity: var(--opacity-low);
+    background: var(--bgc-1stPanel);
 }
 .home > .homeFirstHalf {
     margin: auto;
+    padding: 7rem 0 0 3rem ;
 } 
 .home > div > h3 {
     font-family: var(--font-heading);
@@ -148,6 +175,7 @@ nav a {
     font-family: var(--font-paragraph);
     font-size: var(--fontSize-normal);
     margin: 0;
+    color: var(--textColor);
 }
 .home > .homeSecondHalf {
     display: flex;
@@ -155,21 +183,61 @@ nav a {
     margin: auto;
 }
 .home > div > button {
+    margin-top: 20vh;
     background-color: var(--bgc-greenish);
     color: #000f16;
-    width: 168px;
-    height: 74px;
+    width: 8rem;
+    height: 3rem;
     border-width: 2px;
     border-color: #000f16;
-    border-style: dashed;
+    border-style: none;
     border-radius: 52px;
 }
 .home > div > button:hover {
+    cursor: pointer;
 }
 
 /* about */
 .about {
     height: var(--height-max);
+}
+.about > .backdrop {
+    height: calc(var(--height-max) + 35vh);
+    width: 100%;
+    position: absolute;
+    top: 102vh;
+    left: 0vh;
+    z-index: -2;
+    filter: brightness(.9);
+}
+.about > .opaqueBackdropAbout {
+    height: var(--height-max);
+    width: 100%;
+    position: absolute;
+    top: 100vh;
+    right: 0;
+    z-index: -1;
+    opacity: var(--opacity-low);
+    background: var(--bgc-2ndPanel);
+}
+.about > .aboutFirstHalf {
+    height: var(--height-max);
+    display: flex;
+    justify-content: center;
+    padding: 30% 5% 0 5%;
+}
+.about > div > .dividerLine {
+    position: absolute;
+    top: 150vh;
+    background: var(--lineColor);
+    width: 28rem;
+    height: 1px;
+}
+.about p {
+    font-family: var(--font-paragraph);
+    font-size: var(--fontSize-normal);
+    color: var(--textColor);
+    text-align: justify;
 }
 
 /* services */
@@ -183,6 +251,10 @@ nav a {
     height: var(--height-max);
     background-color: var(--bgc-4thPanel);
 }
+.projects > main > div > div > img {
+    width: 227px;
+    height: 129px;
+}
 
 /* contact_us */
 .contact_us {
@@ -193,19 +265,20 @@ nav a {
 /* footer */
 footer {
     position: absolute;
-    top: 497vh;
-    left: 45%;
+    top: 538vh;
+    left: 40%;
     height: 3%;
     color: lightyellow;
     text-align: center;
 }
-footer::after {
+footer > h6::after {
+    position: absolute;
+    top: 498vh;
+    left: 45%;
     width: 1120px;
     height: 5px;
     background-color: var(--lineColor);
-
 }
 footer > h6 {
-    margin: 10px 0 10px 0;
     padding: 0;
 }
